@@ -1,0 +1,15 @@
+# Environment variables and secrets
+.env
+
+# SQLite database and customer records
+backend/database/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Streamlit cache
+.streamlit/secrets.toml

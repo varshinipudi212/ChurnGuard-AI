@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background: #0b1220;
+    color: #f1f5f9;
+}
+
+header[data-testid="stHeader"] {
+    background: #0b1220 !important;
+}
+
+[data-testid="stToolbar"] {
+    background: transparent !important;
+}
+
+.block-container {
+    max-width: 1400px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+[data-testid="stSidebar"] {
+    background: #101b2d;
+    border-right: 1px solid #26364f;
+}
+
+[data-testid="stSidebar"] * {
+    color: #e2e8f0;
+}
+
+.hero {
+    padding: 25px 28px;
+    border: 1px solid #263b5c;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #172c4d, #102039, #142d48);
+    margin-bottom: 25px;
+}
+
+.hero-label {
+    color: #65c9f2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.hero p {
+    color: #b8c9df;
+    margin-bottom: 0;
+}
+
+.metric-card {
+    background: #142238;
+    border: 1px solid #293c58;
+    border-radius: 14px;
+    padding: 18px;
+    min-height: 110px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+}
+
+.metric-label {
+    color: #9aacc4;
+    font-size: 12px;
+}
+
+.metric-value {
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 9px;
+}
+
+.metric-note {
+    color: #6dc7e9;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+div.stButton > button[kind="primary"] {
+    background: linear-gradient(90deg, #2563eb, #0891b2);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: 700;
+    min-height: 46px;
+}
+
+[data-testid="stForm"] {
+    background: #111e32;
+    border: 1px solid #293c58;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.stTextInput input, .stNumberInput input {
+    background: #172840;
+    color: white;
+}
+
+.stSelectbox div[data-baseweb="select"] > div {
+    background: #172840;
+    color: white;
+}
+
+[data-testid="stMetric"] {
+    background: #142238;
+    border: 1px solid #293c58;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+hr {
+    border-color: #293c58;
+}
+
+footer {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem;
+    }
+    .hero h1 {
+        font-size: 26px;
+    }
+}
